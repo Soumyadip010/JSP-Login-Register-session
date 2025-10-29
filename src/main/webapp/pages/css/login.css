@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* Import a royal classy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Playfair Display', serif; /* classy font */
+}
+
+/* Background Video */
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Overlay to darken video */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* Center Login Box */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.2); /* more transparent */
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.4);
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff; /* make text white for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+    transform: scale(1.03); /* slight zoom on hover */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.login-card h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.login-card label {
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+.login-card input {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.login-card input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-card input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.login-card button {
+    background: linear-gradient(135deg, #6B4226, #C19A6B); /* brown → antique gold */
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-card button:hover {
+    background: linear-gradient(135deg, #A67B5B, #53301C ); /* darker brown → richer gold */
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Link Styling */
+.login-card a {
+    color: #C19A6B; /* antique gold/tan */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+    color: #A67B5B; /* slightly darker shade on hover */
+}
+
