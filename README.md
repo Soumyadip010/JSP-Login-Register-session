@@ -5,7 +5,7 @@ Overview
 --------
 This small JSP-only project demonstrates a simple login and registration flow using the implicit JSP session object and a relational database. The application uses JSP pages (no servlets) and stores user data in a database table. Sessions are created on successful login and destroyed on logout. The original hand-drawn DFD (Data Flow Diagram) has been digitized and is included as DFD_sketch.png.
 
-Files (typical)
+Files
 ---------------
 Place these files into your webapp (e.g., in the webapps/MyApp folder for Tomcat):
 - login.jsp                      : Shows login form (user id, password).Also contains link to register page.
@@ -41,7 +41,6 @@ How it works (flow)
 
 DFD:-
 -----
-<br>
 ![DFD image](images/DFD.png)
 
 Sample JSP snippets
