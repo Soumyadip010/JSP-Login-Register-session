@@ -37,7 +37,7 @@ How it works (flow)
    - Create a session: `session.setAttribute("userid", userid); session.setAttribute("uname", uname);`
    - Redirect to success.jsp which reads the session attributes to display "Welcome uname" and a Logout link.
 4. Logout: logout.jsp invalidates the session: `session.invalidate();` and redirects to home/login.
-5. If login fails, show error.jsp with a retry link back to login.jsp.
+5. If login fails, show error.jsp with a retry page which includes (used include action element of JSP) login.jsp/register.jsp page based on error occured in which page.
 
 DFD:-
 -----
